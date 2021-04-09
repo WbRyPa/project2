@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Prata&display=swap');
+
+body {
+    margin: 0;
+    background-color: rgb(15, 15, 15);
+    color: fff;
+    text-align: center;
+    align-content: center;
+    border-style: inset;
+    padding: 15px;
+    flex: 1;
+}
+
+#flex-container {
+    display: flex;
+    background-color: gray;
+    flex-direction: row;
+}
+  
+#flex-container div {
+    background-color: gray;
+    margin: 20px;
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+    a:link {
+        color: rgb(47, 53, 100);
+    }
+    a:hover {
+        color: rgb(245, 230, 18);
+    }
+    
+    a:visited {
+        color: rgb(167, 172, 175);
+    }
+
+.middle {
+    box-align: center;
+}
+
+.tit_nam {
+    color: whitesmoke;
+    margin: 2px -5px -10px 2px;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Prata';
+    color: rgb(194, 193, 193);
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+a:link {
+    color: rgb(47, 53, 100);
+}
+a:hover {
+    color: rgb(245, 230, 18);
+}
+
+a:visited {
+    color: rgb(167, 172, 175);
+}
+
+#flow {
+    border: 5px rgba(172, 174, 190, 0.35);
+    margin: 1em 0 1em 3.25em;
+    padding: 1em 0 1em;
+    align-content: center;
+}
+
+p {
+    font-family: 'Lato';
+    color: whitesmoke;
+    margin-top: 0;
+    text-align: justify;
+}
+
+.outer {
+    padding: 1em;
+}
+
+blockquote {
+    color: whitesmoke;
+    text-align: initial;
+}
+
+section {
+    column-count: 1;
+    column-gap: 2em;
+}
+
+.image_article {
+    width: 90%;
+    margin: 1em 0 1em 1em;
+}
+
+p.quota {
+    color: whitesmoke;
+    text-align: initial;
+}
+
+.span-all {
+    columns: all;
+    color: rgb(212, 203, 203);
+    font-size: 1.2em;
+}
+
+.commentbox {
+    background-color: rgba(172, 174, 190, 0.35);
+    z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        text-align: left;
+        font-size: 18px;
+    }
+    .middle {
+        box-align: center;
+    }
+    p {
+        line-height: 1.6em;
+        text-align: justify;
+    }
+    section {
+        column-count: 2;
+        column-rule-style: solid;
+        column-rule-color: rgb(43, 43, 43);
+    }
+    section>* {
+        margin-top: 0;
+    }
+    h1 {
+        font-size: 3em;
+        margin: 2em 0 1em;
+    }
+    .outer {
+        padding: 4em;
+    }
+}
+
+article {
+    padding: 2em;
+    background: #312f2f;
+}
+
+h2 {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: ' ';
+        position: absolute;
+        width: 35%;
+        height: 2.5px;
+        z-index: -1;
+        bottom: .1em;
+        left: -1em;
+        background: rgba(172, 174, 190, 0.982);
+        border-radius: 1em;
+    }
+
+    .secondary {
+        margin-top: 2em;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    p.quota {
+        color: rgb(212, 203, 203);
+        text-align: right;
+        width: 70%;
+    }
+
+    h3 {
+        color: rgb(212, 203, 203);
+        margin: 1.5em 0 1em;
+    }
+
+    p.span-all {
+        column-span: all;
+        font-size: 1em;
+        padding: .5em;
+        margin: 5em 0;
+        color: rgb(212, 203, 203);
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .outer {
+        margin: 0 auto;
+        width: 80%;
+    }
+    .middle {
+        box-align: center;
+    }
+    section {
+        column-count: 3;
+    }
+    p.quota {
+        color: rgb(212, 203, 203);
+        text-align: start;
+        width: 70%;
+    }
+    #indent {
+        color: rgb(212, 203, 203);
+        list-style-position: inside;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .outer {
+        margin: 0;
+        width: 80%;
+    }
+    .middle {
+        box-align: center;
+    }
+    section {
+        column-count: 4;
+    }
+    p.quota {
+        color: rgb(212, 203, 203);
+        text-align: right;
+        width: 70%;
+    }
+    #indent {
+        color: rgb(212, 203, 203);
+        list-style-position: inside;
+    }
+}
+
+#indent {
+    color: rgb(212, 203, 203);
+    list-style-position: inside;
+}
